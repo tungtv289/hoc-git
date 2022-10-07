@@ -4,23 +4,7 @@
 3. sửa tất cả đồ ăn có type = 1 thành giá là 5000 -->
 
 <?php
-class DoAn
-{
-    public $name;
-    public $price;
-    public $status;
-    public $owner;
-    public $type;
-
-    public function __construct($name1, $price145678, $owner, $status, $type)
-    {
-        $this->name = $name1;
-        $this->price = $price145678;
-        $this->owner = $owner;
-        $this->status = $status;
-        $this->type = $type;
-    }
-}
+include("classmau.php");
 $mangDoAn = array(
     new DoAn("doan1", 123, "tien", 1, 2),
     new DoAn("doan1", 123, "tien", 1, 3),
