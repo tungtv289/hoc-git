@@ -5,25 +5,7 @@
 
 <?php
 
-use DoAn as GlobalDoAn;
-
-class DoAn
-{
-    public $id;
-    public $name;
-    public $price;
-    public $type;
-    public $status;
-
-    public function __construct( $id, $name, $price,$type,$status)
-    {
-        $this->id = $id;
-        $this->name = $name;
-        $this->price = $price;
-        $this->type = $type;
-        $this->status = $status;
-    }
-}
+include("classmau.php");
 $myfile = fopen("doan10.txt", "r") or die("Unable to open file!");
 $noidungfile= fread($myfile, filesize("doan10.txt"));
 fclose($myfile);
