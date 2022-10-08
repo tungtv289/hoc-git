@@ -2,10 +2,8 @@
 1. xoá tất cả đồ ăn có status=0 thành giá là 0 xong ghi(lưu vào file) do_an_sau_khi_xoa.txt
 <?php
 include("DoAn.php");
-$myfile = fopen("D:\PHPpractice\doan10.txt", "r") or die("Unable to open file!");
-$noidungfile = fread($myfile, filesize("D:\PHPpractice\doan10.txt"));
-fclose($myfile);
-$mang1 = explode(PHP_EOL, $noidungfile);
+include("XuLyFile.php");
+$mang1 = readFileT("D:\PHPpractice\doan10.txt");
 $DoanArr = array();
 foreach ($mang1 as $value) {
     //  echo $value . "\n";
@@ -17,33 +15,20 @@ foreach ($mang1 as $value) {
     $obj = new DoAn($tmpid, $tmpname, $tmpprice, $tmptype, $tmpstatus);
     $DoanArr[] = $obj;
 }
-echo count($mang1);
+echo count($DoanArr);
+echo gettype($DoanArr[1]->status);
 for ($i = 0; $i < count($DoanArr); ++$i) {
     if ($DoanArr[$i]->status == "0") {
+        //       echo $DoanArr[$i]->name;
         unset($DoanArr[$i]);
-        echo $DoanArr[$i]->name;
-        //    ++$dem;
+        //  array_splice($DoanArr, $i, 1);
+        // ++$dem; 
     }
 }
-echo gettype($DoanArr[1]->status);
-$fp = fopen("D:\PHPpractice\array\do_an_sau_khi_xoa.txt", "w") or die("Unable to open file!");
-//fwrite($fp,count($mang1));
-for ($i = 0; $i < count($DoanArr); ++$i) {
-    fwrite($fp, $DoanArr[$i]->name);
-    fwrite($fp, " ");
-
-    fwrite($fp, $DoanArr[$i]->price);
-    fwrite($fp, " ");
-
-    fwrite($fp, $DoanArr[$i]->status);
-    fwrite($fp, " ");
-
-    fwrite($fp, $DoanArr[$i]->owner);
-    fwrite($fp, " ");
-
-    fwrite($fp, $DoanArr[$i]->type . "\n");
-}
-fclose($fp);
-
+//var_dump($DoanArr);
+$DoanArr = array_values($DoanArr);
+//echo $dem;
+echo count($DoanArr);
+writeFile("D:\PHPpractice\array\do_an_sau_khi_xoa.txt",$DoanArr);
 
 ?>
