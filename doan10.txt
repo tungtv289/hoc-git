@@ -1,20 +1,4 @@
-id,name,price,type,status
 0,Myriam,10000,3,0
-1,Lorne,10000,4,0
-2,Joane,10000,5,0
-3,Ashlee,10000,5,1
-4,Hildegaard,10000,4,0
-5,Sidoney,10000,5,1
-6,Sue,10000,2,0
-7,Karena,10000,1,1
-8,Ernesta,10000,2,0
-9,Patricia,10000,1,0
-10,Rosaline,10000,2,1
-11,Jeanna,10000,3,1
-12,Valli,10000,5,0
-13,Florie,10000,5,0
-14,Carmela,10000,1,0
-15,Margette,10000,3,1
 16,Alameda,10000,1,1
 17,Brandise,10000,5,0
 18,Ninnetta,10000,3,0
@@ -35,7 +19,6 @@ id,name,price,type,status
 33,Tamqrah,10000,5,1
 34,Flo,10000,1,1
 35,Arabel,10000,1,0
-36,Deane,10000,5,0
 37,Florie,10000,5,1
 38,Elise,10000,2,0
 39,Raf,10000,4,0
@@ -199,7 +182,6 @@ id,name,price,type,status
 197,Stevana,10000,5,0
 198,Selma,10000,5,0
 199,Marylou,10000,2,0
-200,Myriam,10000,3,1
 201,Ilse,10000,4,1
 202,Oralee,10000,1,1
 203,Gisela,10000,5,0
@@ -371,7 +353,6 @@ id,name,price,type,status
 369,Fredericka,10000,2,0
 370,Zia,10000,1,1
 371,Rani,10000,2,0
-372,Myriam,10000,5,0
 373,Chickie,10000,4,0
 374,Ileana,10000,2,1
 375,Sadie,10000,2,1
@@ -697,7 +678,6 @@ id,name,price,type,status
 695,Misha,10000,5,0
 696,Donnie,10000,5,1
 697,Gianina,10000,5,1
-698,Myriam,10000,1,0
 699,Hildegaard,10000,3,1
 700,Emelina,10000,5,0
 701,Isa,10000,5,0
@@ -896,7 +876,6 @@ id,name,price,type,status
 894,Brena,10000,3,0
 895,Augustine,10000,5,0
 896,Jobi,10000,4,0
-897,Joane,10000,4,1
 898,Lila,10000,5,0
 899,Annora,10000,2,1
 900,Marita,10000,2,1

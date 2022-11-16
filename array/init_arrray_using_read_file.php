@@ -4,21 +4,17 @@
 4. sửa tất cả đồ ăn có status=0 thành giá là 0 -->
 
 <?php
-
-include("classmau.php");
-$myfile = fopen("doan10.txt", "r") or die("Unable to open file!");
-$noidungfile= fread($myfile, filesize("doan10.txt"));
-fclose($myfile);
-$mang1 = explode(PHP_EOL, $noidungfile);
+include("D:\PHPpractice\array\DoAn.php");
+include("XuLyFile.php");
+$mang1 = readFileT("D:\PHPpractice\doan10.txt");
 foreach ($mang1 as $value) {
-    echo $value . "\n";
-    $tmpid = explode(",", $value)[0];
-    $tmpname = explode(",", $value)[1];
-    $tmpprice = explode(",", $value)[2];
-    $tmptype = explode(",", $value)[3];
-    $tmpstatus = explode(",", $value)[4];
-    $obj = new DoAn ($tmpid, $tmpname, $tmpprice,$tmptype ,$tmpstatus);
-    $DoanArr[] = $obj;
-  }
-
+  $tmpname = explode(",", $value)[0];
+  $tmpprice = explode(",", $value)[1];
+  $tmpstatus = explode(",", $value)[2];
+  $tmpowner= explode(",", $value)[3];
+  $tmptype = explode(",", $value)[4];
+  $obj = new DoAn($tmpname,  $tmpprice, $tmpstatus,$tmpowner,$tmptype);
+  $DoanArr[] = $obj;
+}
+ 
 ?>

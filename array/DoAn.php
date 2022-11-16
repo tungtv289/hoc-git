@@ -4,12 +4,11 @@ use DoAn as GlobalDoAn;
 
 class DoAn
 {
-    public $id;
     public $name;
     public $price;
-    public $type;
     public $status;
-
+    public $owner;
+    public $type;
     public function __construct( $id, $name, $price,$type,$status)
     {
         $this->id = $id;

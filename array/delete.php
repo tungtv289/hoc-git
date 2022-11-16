@@ -25,8 +25,8 @@ for ($i = 0; $i < count($DoanArr); ++$i) {
         // ++$dem; 
     }
 }
-//var_dump($DoanArr);
-$DoanArr = array_values($DoanArr);
+// var_dump($DoanArr);
+// $DoanArr = array_values($DoanArr);
 //echo $dem;
 echo count($DoanArr);
 writeFile("D:\PHPpractice\array\do_an_sau_khi_xoa.txt",$DoanArr);

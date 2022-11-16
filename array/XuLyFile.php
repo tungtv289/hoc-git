@@ -1,10 +1,22 @@
 <?php
+function logMsg($message) {
+    $myFile = "log.log";
+    $fh = fopen($myFile, 'a') or die("can't open file");
+    fwrite($fh, $message."\n");
+    fclose($fh);
+}
+
 function readFileT($filePath)
 {
+
     $myfile = fopen($filePath, "r") or die("Unable to open file!");
     $noidungfile = fread($myfile, filesize($filePath));
+    logMsg("cho nay nel");
+    logMsg($noidungfile);
     fclose($myfile);
-    return  explode(PHP_EOL, $noidungfile);
+    $test = explode("\n", $noidungfile);
+    logMsg(count($test));
+    return  $test;
 }
 //#################################################################
 function writeFile($filePath, $arrDoAn)
@@ -22,7 +34,10 @@ function writeFile($filePath, $arrDoAn)
         fwrite($fp, $arrDoAn[$i]->type);
         fwrite($fp, ",");
         fwrite($fp, $arrDoAn[$i]->status . "\n");
+        
     }
     //}
     fclose($fp);
 }
+
+

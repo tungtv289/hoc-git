@@ -1,0 +1,10 @@
+1,Cathie,21,Cathie@yopmail.com,4.67,0
+2,Kate,22,Kate@yopmail.com,9.41,1
+3,Kara-Lynn,23,Kara-Lynn@yopmail.com,4.69,1
+4,Donetta,23,Donetta@yopmail.com,10.84,0
+5,Lorie,23,Lorie@yopmail.com,4.07,1
+7,Fernande,21,Fernande@yopmail.com,1.36,0
+9,Trudie,18,Trudie@yopmail.com,5.4,1
+9,Trudie,18,Trudie@yopmail.com,5.4,1
+10,Evaleen,19,Evaleen@yopmail.com,5.23,0
+15, Isa, 18 , Isa@yopmail.com , 3.24,   1
