@@ -840,7 +840,6 @@ logMsg(count($DoanArr));
         height: 10%;
         position: absolute; 
         bottom: 90;
-        
         "
        
     > 
