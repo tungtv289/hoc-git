@@ -831,7 +831,6 @@ logMsg(count($DoanArr));
         }, 10);
       })(document.getElementById('pinkboard'));
     </script>
-    
      <div
       class="bottom-text"
       ,
