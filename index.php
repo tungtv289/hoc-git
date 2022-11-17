@@ -833,19 +833,20 @@ logMsg(count($DoanArr));
     </script>
     
      <div
-      class="right-text"
+      class="bottom-text"
       ,
       style="
-        width: 15%;
+        width: 21%;
         height: 10%;
         position: absolute; 
-        right: 120;
+        bottom: 90;
+        
         "
        
     > 
    
   <audio  id="myAudio" controls autoplay loop >
-  <source src="https://tainhacmienphi.biz/get/song/api/2530"  type="audio/mp3">
+  <source src="https://trangnhacchuong.com/nhac-chuong/abcde/Nhac-Chuong-Co-Phai-La-Love-Speed-Up-Tiktok-UMIE.mp3"  type="audio/mp3">
 </audio> 
   <script>
   var x = document.getElementById("myAudio"); 
