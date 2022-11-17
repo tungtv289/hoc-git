@@ -853,7 +853,6 @@ logMsg(count($DoanArr));
     x.loop = true;
     x.load();
   </script> 
-   
 
 </body>
   
