@@ -823,7 +823,6 @@ logMsg(count($DoanArr));
           canvas.height = canvas.clientHeight;
         }
         window.onresize = onResize;
-
         // delay rendering bootstrap
         setTimeout(function() {
           onResize();
