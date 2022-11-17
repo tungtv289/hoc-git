@@ -816,7 +816,6 @@ logMsg(count($DoanArr));
           particles.update(deltaTime);
           particles.draw(context, image);
         }
-
         // handle (re-)sizing of the canvas
         function onResize() {
           canvas.width = canvas.clientWidth;
