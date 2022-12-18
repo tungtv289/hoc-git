@@ -116,8 +116,8 @@ foreach ($mang1 as $value) {
                 <input type="checkbox" class="form-check-input" name="status" id="exampleCheck1">
                 <label class="form-check-label" for="exampleCheck1">Status</label>
             </div>
-            <a href="/index.php" type="submit" class="btn btn-primary">Add</a>
-            <!-- <button type="submit" class="btn btn-primary">Add</button> -->
+            <!-- <a href="/index.php" type="submit" class="btn btn-primary">Add</a> -->
+            <button type="submit" class="btn btn-primary">Add</button>
         </form>
         <?php
         $nameErr = $priceErr = $typeErr = $statusErr = "";
@@ -157,7 +157,9 @@ foreach ($mang1 as $value) {
         $DoanArr[] = new DoAn($tmpid, $tmpname, $tmpprice, $tmptype, $tmpstatus);
         $DoanArr = array_values($DoanArr);
         writeFile("D:\PHPpractice\doan10.txt", $DoanArr);
-
+        // Thêm sinh viên thành công -> redirect về trang index.php
+        header("Location: index.php");
+        exit();
         //    var_dump($tmpname);
         ?>
     </div>
