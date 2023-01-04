@@ -675,15 +675,6 @@
 {{ HTML::script('crm/app.js') }}
 @yield('scripts')
 <script>
-<<<<<<< HEAD
-     $(document).ready(function() {
-        @if (Session::has('message'))
-            toast.success('{{ Session::get('message') }}', 3000);
-        @endif
-
-        @if (Session::has('error'))
-            toast.error('{{ Session::get('error') }}', 3000);
-=======
     $(function () {
         @if(Session::has('success'))
         toastr.options =
@@ -693,7 +684,6 @@
         }
             toastr.success("{{ session('success') }}", '', {timeOut: 20000});
         @endif
-
         @if(Session::has('error'))
         toastr.options =
         {
@@ -702,7 +692,6 @@
         }
             toastr.error("{{ session('error') }}", '', {timeOut: 20000});
         @endif
-
         @if(Session::has('info'))
         toastr.options =
         {
@@ -711,7 +700,6 @@
         }
             toastr.info("{{ session('info') }}", '', {timeOut: 20000});
         @endif
-
         @if(Session::has('warning'))
         toastr.options =
         {
@@ -719,7 +707,15 @@
           "progressBar" : true
         }
             toastr.warning("{{ session('warning') }}", '', {timeOut: 20000});
->>>>>>> cef82bdbaa376aefab27d83ba0a56632424937fe
+        @endif
+
+        @if (Session::has('message'))
+        toastr.options =
+        {
+          "closeButton" : true,
+          "progressBar" : true
+        }
+            toastr.success("{{ Session::get('message') }}", '', {timeOut: 20000});
         @endif
       });
      $(document).ready(function() {
@@ -728,7 +724,6 @@
         //     $('#toast-common .toast-body').text('{{ Session::get('message') }}')
         //     $('#toast-common').toast('show')
         // @endif
-
         // @if (Session::has('error'))
         //     var toast = new Toasty(options);
         //     $('#toast-common strong').toggleClass("me-auto text-danger")
